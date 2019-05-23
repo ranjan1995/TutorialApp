@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Java Tutorial">
+        <menu>
+            <item
+                android:id="@+id/Java_Home"
+                android:title="Java - Home" />
+            <item
+                android:id="@+id/Java_Overview"
+                android:title="Java - Overview" />
+            <item
+                android:id="@+id/Java_Environment_Setup"
+                android:title="Java - Environment Setup" />
+            <item
+                android:id="@+id/Java_Basic_Syntax"
+                android:title="Java - Basic Syntax" />
+            <item
+                android:id="@+id/java_object_classes"
+                android:title="Java - Object - Classes" />
+            <item
+                android:id="@+id/java_constructors"
+                android:title="Java - Constructors" />
+            <item
+                android:id="@+id/java_basic_datatypes"
+                android:title="Java - Basic Datatypes" />
+            <item
+                android:id="@+id/java_variable_types"
+                android:title="Java - Variable Types" />
+            <item
+                android:id="@+id/java_modifier_types"
+                android:title="Java - Modifier Types" />
+            <item
+                android:id="@+id/java_basic_operators"
+                android:title="Java - Basic Operators" />
+            <item
+                android:id="@+id/java_loop_control"
+                android:title="Java - Loop Control" />
+            <item
+                android:id="@+id/java_decision_making"
+                android:title="Java - Decision Making" />
+            <item
+                android:id="@+id/java_numbers"
+                android:title="Java - Numbers" />
+            <item
+                android:id="@+id/java_characters"
+                android:title="Java - Characters" />
+            <item
+                android:id="@+id/java_strings"
+                android:title="Java - Strings" />
+            <item
+                android:id="@+id/java_arrays"
+                android:title="Java - Arrays" />
+            <item
+                android:id="@+id/java_date_time"
+                android:title="Java - Date - Time" />
+            <item
+                android:id="@+id/java_regular_expressions"
+                android:title="Java - Regular Expressions" />
+            <item
+                android:id="@+id/java_methods"
+                android:title="Java - Methods" />
+            <item
+                android:id="@+id/java_files_io"
+                android:title="Java - Files and I/O" />
+            <item
+                android:id="@+id/java_exceptions"
+                android:title="Java - Exceptions" />
+            <item
+                android:id="@+id/java_innerclasses"
+                android:title="Java - Inner classes" />
+
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>
