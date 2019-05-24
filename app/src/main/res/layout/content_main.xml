@@ -22,46 +22,53 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/tutorials_logo"
-            android:layout_marginTop="16dp"/>
+            android:layout_height="204dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo" />
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="16dp">
+            android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/htmlBtn"
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:src="@drawable/html"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                />
+                android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:src="@drawable/css"
-                android:layout_margin="16dp"
-                />
+                <ImageView
+                    android:id="@+id/htmlBtn"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/html" />
 
-            <ImageView
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:src="@drawable/reactjs"
-                android:layout_margin="16dp"
-                />
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/css" />
 
-            <ImageView
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:src="@drawable/swift"
-                android:layout_margin="16dp"
-                />
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/java-logo" />
 
-        </LinearLayout>
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/reactjs" />
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/swift" />
+
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 
