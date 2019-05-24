@@ -11,10 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:outlineSpotShadowColor="@color/design_default_color_primary">
-        <TextView
-            android:id="@+id/home"
+
+
+        <WebView
+            android:id="@+id/webView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:gravity="center"
             android:textColor="#000"

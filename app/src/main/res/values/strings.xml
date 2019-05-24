@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Tutorial Application</string>
+    <string name="app_name" translatable="false">Actively Learn</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -1815,7 +1815,7 @@
             <body bgcolor="#E6E6FA">
                 <p>Decision making structures have one or more conditions to be evaluated or tested by the program, along with a statement or statements that are to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.</p>
                 <p>Following is the general form of a typical decision making structure found in most of the programming languages &minus;</p>
-                <img src="https://www.tutorialspoint.com/java/images/decision_making.jpg" alt="Decision Making" />
+                <img src="file:///android_res/drawable/decision_making.jpg" style="height:100px;width:100px;" />
                 <p>Java programming language provides following types of decision making statements. Click the following links to check their detail.</p>
                 <table>
                    <thead<tr>
