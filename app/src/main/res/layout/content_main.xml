@@ -23,12 +23,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
+
+
+
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="195dp"
-                android:layout_margin="20dp"
-                android:layout_marginTop="30dp"
-                android:padding="15dp"
                 android:src="@drawable/logo" />
 
             <TextView
@@ -42,7 +43,10 @@ Java is a programming language.
 Java is used to develop mobile apps, web apps, desktop apps, games and much more.."
                 android:textAlignment="center"
                 android:textColor="#00F"
+                android:fontFamily="sans-serif-medium"
                 android:textSize="17dp" />
+
+
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
