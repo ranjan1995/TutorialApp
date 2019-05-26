@@ -2,6 +2,7 @@ package com.example.tutorial;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.webkit.WebView;
 import android.widget.TextView;
@@ -29,6 +30,8 @@ public class JavaActivity extends AppCompatActivity {
 
         browser.loadDataWithBaseURL("file:///android_asset/",html,
                 "text/html", "UTF-8",null);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
     }
 
 }

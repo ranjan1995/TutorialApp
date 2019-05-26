@@ -4,74 +4,76 @@
     tools:showIn="navigation_view">
 
     <item
-        android:title="Java Tutorial">
+        android:title="@string/java_tutorial_nav"
+        android:checked="false"
+        android:icon="@drawable/javalogo">
         <menu>
             <item
                 android:id="@+id/Java_Home"
-                android:title="Java - Home" />
+                android:title="@string/java_home_nav" />
             <item
                 android:id="@+id/Java_Overview"
-                android:title="Java - Overview" />
+                android:title="@string/java_overview_nav" />
             <item
                 android:id="@+id/Java_Environment_Setup"
-                android:title="Java - Environment Setup" />
+                android:title="@string/java_environment_setup_nav" />
             <item
                 android:id="@+id/Java_Basic_Syntax"
-                android:title="Java - Basic Syntax" />
+                android:title="@string/java_basic_syntax_nav" />
             <item
                 android:id="@+id/java_object_classes"
-                android:title="Java - Object - Classes" />
+                android:title="@string/java_object_classes_nav" />
             <item
                 android:id="@+id/java_constructors"
-                android:title="Java - Constructors" />
+                android:title="@string/java_constructors_nav" />
             <item
                 android:id="@+id/java_basic_datatypes"
-                android:title="Java - Basic Datatypes" />
+                android:title="@string/java_basic_datatypes_nav" />
             <item
                 android:id="@+id/java_variable_types"
-                android:title="Java - Variable Types" />
+                android:title="@string/java_variable_types_nav" />
             <item
                 android:id="@+id/java_modifier_types"
-                android:title="Java - Modifier Types" />
+                android:title="@string/java_modifier_types_nav" />
             <item
                 android:id="@+id/java_basic_operators"
-                android:title="Java - Basic Operators" />
+                android:title="@string/java_basic_operators_nav" />
             <item
                 android:id="@+id/java_loop_control"
-                android:title="Java - Loop Control" />
+                android:title="@string/java_loop_control_nav" />
             <item
                 android:id="@+id/java_decision_making"
-                android:title="Java - Decision Making" />
+                android:title="@string/java_decision_making_nav" />
             <item
                 android:id="@+id/java_numbers"
-                android:title="Java - Numbers" />
+                android:title="@string/java_numbers_nav" />
             <item
                 android:id="@+id/java_characters"
-                android:title="Java - Characters" />
+                android:title="@string/java_characters_nav" />
             <item
                 android:id="@+id/java_strings"
-                android:title="Java - Strings" />
+                android:title="@string/java_strings_nav" />
             <item
                 android:id="@+id/java_arrays"
-                android:title="Java - Arrays" />
+                android:title="@string/java_arrays_nav" />
             <item
                 android:id="@+id/java_date_time"
-                android:title="Java - Date - Time" />
+                android:title="@string/java_date_time_nav" />
             <item
                 android:id="@+id/java_regular_expressions"
-                android:title="Java - Regular Expressions" />
+                android:title="@string/java_regular_expressions_nav" />
             <item
                 android:id="@+id/java_methods"
-                android:title="Java - Methods" />
+                android:title="@string/java_methods_nav" />
             <item
                 android:id="@+id/java_files_io"
-                android:title="Java - Files and I/O" />
+                android:title="@string/java_files_and_i_o_nav" />
             <item
                 android:id="@+id/java_exceptions"
-                android:title="Java - Exceptions" />
+                android:title="@string/java_exceptions_nav" />
             <item
                 android:id="@+id/java_innerclasses"
-                android:title="Java - Inner classes" />
+                android:title="@string/java_inner_classes_nav" />
 
         </menu>
     </item>
