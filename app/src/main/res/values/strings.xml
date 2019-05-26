@@ -62,9 +62,9 @@ table{ margin-left:auto; margin-right:auto;}
   </head>
   <body bgcolor="#FFF">
               <p>Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Java. This reference will take you through simple and practical approaches while learning Java Programming language.</p>
-              <h1>Audience</h1>
+              <h2>Audience</h2>
               <p>This tutorial has been prepared for the beginners to help them understand the basic to advanced concepts related to Java Programming language.</p>
-              <h1>Prerequisites</h1>
+              <h2>Prerequisites</h2>
               <p>Before you start practicing various types of examples given in this reference, we assume that you are already aware about computer programs and computer programming languages.</p>
           </body>
    </html>
@@ -823,35 +823,34 @@ table{ margin-left:auto; margin-right:auto;}
                      ClassName() {
                      }
                   }
-                  </font
           </pre>
           <p>Java allows two types of constructors namely &minus;</p>
           <ul class="list">
              <li><b>No argument Constructors</b></li>
-             <li></b>Parameterized Constructors</b></li>
+             <li><b>Parameterized Constructors</b></li>
           </ul>
           <h2>No argument Constructors</h2>
-          <p>As the name specifies the no argument constructors of Java does not accept any parameters instead, using these constructors the instance variables of a method will be initialized with fixed values for all objects.</p>
+          <p>As the name specifies the no argument constructors of Java does not accept any parameters instead,
+           using these constructors the instance variables of a method will be initialized with fixed values for all objects.</p>
           <h2>Example</h2>
           <pre class="prediv result notranslate">
 
             Public class MyClass {
                Int num;
-               <MyClass() {
+               MyClass() {
                   num = 100;
                }
             }
-
           </pre>
           <p>You would call constructor to initialize objects as follows</p>
           <pre class="prediv result notranslate">
-              public class ConsDemo {
-                 public static void main(String args[]) {
-                    MyClass t1 = new MyClass();
-                    MyClass t2 = new MyClass();
-                    System.out.println(t1.num + " " + t2.num);
-                 }
-              }
+      public class ConsDemo {
+         public static void main(String args[]) {
+            MyClass t1 = new MyClass();
+            MyClass t2 = new MyClass();
+            System.out.println(t1.num + " " + t2.num);
+         }
+      }
           </pre>
           <p>This would produce the following result</p>
           <pre class="result notranslate">
@@ -1992,7 +1991,7 @@ table{ margin-left:auto; margin-right:auto;}
         <p>A <b>loop</b> statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages &minus;</p>
         <img class="imageAlign" src="file:///android_res/drawable/loop_architecture.jpg" alt="Loop Architecture" />
         <p>Java programming language provides the following types of loop to handle looping requirements. Click the following links to check their detail.</p>
-        <table class="table table-bordered">
+        <table>
         <tr>
         <th>Sr.No.</th>
         <th style="text-align:center;">Loop &amp; Description</th>
@@ -2016,7 +2015,7 @@ table{ margin-left:auto; margin-right:auto;}
         <h2>Loop Control Statements</h2>
         <p>Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.</p>
         <p>Java supports the following control statements. Click the following links to check their detail.</p>
-        <table class="table table-bordered">
+        <table>
         <tr>
         <th>Sr.No.</th>
         <th style="text-align:center;">Control Statement &amp; Description</th>
@@ -2046,7 +2045,7 @@ table{ margin-left:auto; margin-right:auto;}
         <li><p><b>Expression</b> &minus; This evaluates to the array you need to loop through. The expression can be an array variable or method call that returns an array.</p></li>
         </ul>
         <h3>Example</h3>
-        <a href="http://www.tutorialspoint.comhttp://tpcg.io/4R5ayk" target="_blank" class="demo" rel="nofollow"><i class="fa-external-link"></i> Live Demo</a>
+
         <pre class="prettyprint notranslate prediv">
         public class Test {
 
@@ -3116,7 +3115,7 @@ table{ margin-left:auto; margin-right:auto;}
       </pre>
       <h2>The Arrays Class</h2>
       <p>The java.util.Arrays class contains various static methods for sorting and searching arrays, comparing arrays, and filling array elements. These methods are overloaded for all primitive types.</p>
-      <table class="table table-bordered">
+      <table>
       <tr>
       <th>Sr.No.</th>
       <th style="text-align:center;">Method &amp; Description</th>
@@ -3173,7 +3172,7 @@ table{ margin-left:auto; margin-right:auto;}
   </head>
   <body bgcolor="#FFF">
       <p>Java provides a data structure, the <b>array</b>, which stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.</p>
-      <p>Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables.</p>
+      <p>Instead of declaring individual variables, such as number0, number1, …, and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and …, numbers[99] to represent individual variables.</p>
       <p>This tutorial introduces how to declare array variables, create arrays, and process arrays using indexed variables.</p>
       <h2>Declaring Array Variables</h2>
       <p>To use an array in a program, you must declare a variable to reference the array, and you must specify the type of array the variable can reference. Here is the syntax for declaring an array variable &minus;</p>
@@ -3208,7 +3207,7 @@ table{ margin-left:auto; margin-right:auto;}
       </pre>
       <p>Alternatively you can create arrays as follows &minus;</p>
       <pre class="result notranslate">
-      dataType[] arrayRefVar = {value0, value1, ..., valuek};
+      dataType[] arrayRefVar = {value0, value1, …, valuek};
       </pre>
       <p>The array elements are accessed through the <b>index</b>. Array indices are 0-based; that is, they start from 0 to <b>arrayRefVar.length-1</b>.</p>
       <h3>Example</h3>
@@ -3308,7 +3307,7 @@ table{ margin-left:auto; margin-right:auto;}
         public static int[] reverse(int[] list) {
            int[] result = new int[list.length];
 
-           for (int i = 0, j = result.length - 1; i &lt; list.length; i++, j--) {
+           for (int i = 0, j = result.length - 1; i &lt; list.length; i++, j—) {
               result[j] = list[i];
            }
            return result;
@@ -3316,7 +3315,7 @@ table{ margin-left:auto; margin-right:auto;}
       </pre>
       <h2>The Arrays Class</h2>
       <p>The java.util.Arrays class contains various static methods for sorting and searching arrays, comparing arrays, and filling array elements. These methods are overloaded for all primitive types.</p>
-      <table class="table table-bordered">
+      <table>
       <tr>
       <th>Sr.No.</th>
       <th style="text-align:center;">Method &amp; Description</th>
@@ -3375,7 +3374,7 @@ table{ margin-left:auto; margin-right:auto;}
   <body bgcolor="#FFF">
     <p>Java provides the <b>Date</b> class available in <b>java.util</b> package, this class encapsulates the current date and time.</p>
 <p>The Date class supports two constructors as shown in the following table.</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Sr.No.</th>
 <th style="text-align:center;">Constructor &amp; Description</th>
@@ -3394,7 +3393,7 @@ table{ margin-left:auto; margin-right:auto;}
 </tr>
 </table>
 <p>Following are the methods of the date class.</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Sr.No.</th>
 <th style="text-align:center;">Method &amp; Description</th>
@@ -3515,7 +3514,7 @@ Current Date: Sun 2004.07.18 at 04:14:09 PM PDT
 </pre>
 <h2>Simple DateFormat Format Codes</h2>
 <p>To specify the time format, use a time pattern string. In this pattern, all ASCII letters are reserved as pattern letters, which are defined as the following &minus;</p>
-<table class="table table-bordered" style="text-align:center;">
+<table>
 <tr>
 <th style="text-align:center;">Character</th>
 <th style="text-align:center;">Description</th>
@@ -3690,7 +3689,7 @@ System.out.printf("%s %tB %&lt;te, %&lt;tY", "Due date:", date);
 Due date: February 09, 2004
 </pre>
 <h2>Date and Time Conversion Characters</h2>
-<table class="table table-bordered" style="text-align:center;">
+<table>
 <tr>
 <th style="text-align:center;">Character</th>
 <th style="text-align:center;">Description</th>
@@ -3944,7 +3943,7 @@ Difference is : 5993
 <p>GregorianCalendar is a concrete implementation of a Calendar class that implements the normal Gregorian calendar with which you are familiar. We did not discuss Calendar class in this tutorial, you can look up standard Java documentation for this.</p>
 <p>The <b>getInstance( )</b> method of Calendar returns a GregorianCalendar initialized with the current date and time in the default locale and time zone. GregorianCalendar defines two fields: AD and BC. These represent the two eras defined by the Gregorian calendar.</p>
 <p>There are also several constructors for GregorianCalendar objects &minus;</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Sr.No.</th>
 <th style="text-align:center;">Constructor &amp; Description</th>
@@ -3993,7 +3992,7 @@ Difference is : 5993
 </tr>
 </table>
 <p>Here is the list of few useful support methods provided by GregorianCalendar class &minus;</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Sr.No.</th>
 <th style="text-align:center;">Method &amp; Description</th>
@@ -4288,7 +4287,7 @@ Found value: 0
 </pre>
 <h2>Regular Expression Syntax</h2>
 <p>Here is the table listing down all the regular expression metacharacter syntax available in Java &minus;</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Subexpression</th>
 <th style="text-align:center;">Matches</th>
@@ -4434,7 +4433,7 @@ Found value: 0
 <p>Here is a list of useful instance methods &minus;</p>
 <h3>Index Methods</h3>
 <p>Index methods provide useful index values that show precisely where the match was found in the input string &minus;</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Sr.No.</th>
 <th style="text-align:center;">Method &amp; Description</th>
@@ -4462,7 +4461,7 @@ Found value: 0
 </table>
 <h3>Study Methods</h3>
 <p>Study methods review the input string and return a Boolean indicating whether or not the pattern is found &minus;</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Sr.No.</th>
 <th style="text-align:center;">Method &amp; Description</th>
@@ -4494,7 +4493,7 @@ Found value: 0
 </table>
 <h2>Replacement Methods</h2>
 <p>Replacement methods are useful methods for replacing text in an input string &minus;</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Sr.No.</th>
 <th style="text-align:center;">Method &amp; Description</th>
@@ -4677,7 +4676,7 @@ System.out.println(sb.toString());
 </pre>
 <h3>PatternSyntaxException Class Methods</h3>
 <p>A PatternSyntaxException is an unchecked exception that indicates a syntax error in a regular expression pattern. The PatternSyntaxException class provides the following methods to help you determine what went wrong &minus;</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Sr.No.</th>
 <th style="text-align:center;">Method &amp; Description</th>
@@ -5300,7 +5299,7 @@ File f = new File("C:/java/hello");
 InputStream f = new FileInputStream(f);
 </pre>
 <p>Once you have <i>InputStream</i> object in hand, then there is a list of helper methods which can be used to read to stream or to do other operations on the stream.</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Sr.No.</th>
 <th style="text-align:center;">Method &amp; Description</th>
@@ -5354,7 +5353,7 @@ File f = new File("C:/java/hello");
 OutputStream f = new FileOutputStream(f);
 </pre>
 <p>Once you have <i>OutputStream</i> object in hand, then there is a list of helper methods, which can be used to write to stream or to do other operations on the stream.</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Sr.No.</th>
 <th style="text-align:center;">Method &amp; Description</th>
@@ -5577,7 +5576,7 @@ at Exceptions.Unchecked_Demo.main(Unchecked_Demo.java:8)
 <p>Following is a list of most common checked and unchecked <a href="http://www.tutorialspoint.com/java/java_builtin_exceptions.htm">Java\'s Built-in Exceptions</a>.</p>
 <h2>Exceptions Methods</h2>
 <p>Following is the list of important methods available in the Throwable class.</p>
-<table class="table table-bordered">
+<table>
 <tr>
 <th>Sr.No.</th>
 <th style="text-align:center;">Method &amp; Description</th>

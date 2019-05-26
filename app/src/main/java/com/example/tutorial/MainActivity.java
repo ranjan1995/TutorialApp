@@ -60,81 +60,88 @@ public class MainActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.Java_Home:
-                goToContentActivity(R.string.java_home);
+                goToContentActivityWithFlag(R.string.java_home,R.string.java_home_nav);
                 break;
             case R.id.Java_Overview:
-                goToContentActivity(R.string.Java_Overview);
+                goToContentActivityWithFlag(R.string.Java_Overview,R.string.java_overview_nav);
                 break;
             case R.id.Java_Environment_Setup:
-                goToContentActivity(R.string.Java_Environment_Setup);
+                goToContentActivityWithFlag(R.string.Java_Environment_Setup,R.string.java_environment_setup_nav);
                 break;
             case R.id.Java_Basic_Syntax:
-                goToContentActivity(R.string.Java_Basic_Syntax);
+                goToContentActivityWithFlag(R.string.Java_Basic_Syntax,R.string.java_basic_syntax_nav);
                 break;
             case R.id.java_object_classes:
-                goToContentActivity(R.string.java_object_classes);
+                goToContentActivityWithFlag(R.string.java_object_classes,R.string.java_object_classes_nav);
                 break;
             case R.id.java_constructors:
-                goToContentActivity(R.string.java_constructors);
+                goToContentActivityWithFlag(R.string.java_constructors,R.string.java_constructors_nav);
                 break;
             case R.id.java_basic_datatypes:
-                goToContentActivity(R.string.java_basic_datatypes);
+                goToContentActivityWithFlag(R.string.java_basic_datatypes,R.string.java_basic_datatypes_nav);
                 break;
             case R.id.java_variable_types:
-                goToContentActivity(R.string.java_variable_types);
+                goToContentActivityWithFlag(R.string.java_variable_types,R.string.java_variable_types_nav);
                 break;
             case R.id.java_modifier_types:
-                goToContentActivity(R.string.java_modifier_types);
+                goToContentActivityWithFlag(R.string.java_modifier_types,R.string.java_modifier_types_nav);
                 break;
             case R.id.java_basic_operators:
-                goToContentActivity(R.string.java_basic_operators);
+                goToContentActivityWithFlag(R.string.java_basic_operators,R.string.java_basic_operators_nav);
                 break;
             case R.id.java_loop_control:
-                goToContentActivity(R.string.java_loop_control);
+                goToContentActivityWithFlag(R.string.java_loop_control,R.string.java_loop_control_nav);
                 break;
             case R.id.java_decision_making:
-                goToContentActivity(R.string.java_decision_making);
+                goToContentActivityWithFlag(R.string.java_decision_making,R.string.java_decision_making_nav);
                 break;
             case R.id.java_numbers:
-                goToContentActivity(R.string.java_numbers);
+                goToContentActivityWithFlag(R.string.java_numbers,R.string.java_numbers_nav);
                 break;
             case R.id.java_characters:
-                goToContentActivity(R.string.java_characters);
+                goToContentActivityWithFlag(R.string.java_characters,R.string.java_characters_nav);
                 break;
             case R.id.java_strings:
-                goToContentActivity(R.string.java_strings);
+                goToContentActivityWithFlag(R.string.java_strings,R.string.java_strings_nav);
                 break;
             case R.id.java_arrays:
-                goToContentActivity(R.string.java_arrays);
+                goToContentActivityWithFlag(R.string.java_arrays,R.string.java_arrays_nav);
                 break;
             case R.id.java_date_time:
-                goToContentActivity(R.string.java_date_time);
+                goToContentActivityWithFlag(R.string.java_date_time,R.string.java_date_time_nav);
                 break;
             case R.id.java_regular_expressions:
-                goToContentActivity(R.string.java_regular_expressions);
+                goToContentActivityWithFlag(R.string.java_regular_expressions,R.string.java_regular_expressions_nav);
                 break;
             case R.id.java_methods:
-                goToContentActivity(R.string.java_methods);
+                goToContentActivityWithFlag(R.string.java_methods,R.string.java_methods_nav);
                 break;
             case R.id.java_files_io:
-                goToContentActivity(R.string.java_files_io);
+                goToContentActivityWithFlag(R.string.java_files_io,R.string.java_files_and_i_o_nav);
                 break;
             case R.id.java_exceptions:
-                goToContentActivity(R.string.java_exceptions);
+                goToContentActivityWithFlag(R.string.java_exceptions,R.string.java_exceptions_nav);
                 break;
             case R.id.java_innerclasses:
-                goToContentActivity(R.string.java_innerclasses);
+                goToContentActivityWithFlag(R.string.java_innerclasses,R.string.java_inner_classes_nav);
                 break;
         }
+
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
+/*
     private void goToContentActivity(int homepage) {
         Intent intent = new Intent(MainActivity.this, JavaActivity.class);
         intent.putExtra("html", getResources().getString(homepage));
+        startActivity(intent);
+    }*/
+    private void goToContentActivityWithFlag(int homepage, int flag) {
+        Intent intent = new Intent(MainActivity.this, JavaActivity.class);
+        intent.putExtra("html", getResources().getString(homepage));
+        intent.putExtra("flag", getResources().getString(flag));
         startActivity(intent);
     }
 }
