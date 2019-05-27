@@ -5857,7 +5857,7 @@ class MyException extends Exception {
 </pre>
 <p>You just need to extend the predefined <b>Exception</b> class to create your own Exception. These are considered to be checked exceptions. The following <b>InsufficientFundsException</b> class is a user-defined exception that extends the Exception class, making it a checked exception. An exception class is like any other class, containing useful fields and methods.</p>
 <h3>Example</h3>
-<pre  id="exception">
+<pre  class="prettyprint notranslate">
 // File Name InsufficientFundsException.java
 import java.io.*;
 
